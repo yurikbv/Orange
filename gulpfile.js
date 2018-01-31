@@ -12,7 +12,7 @@ var gulp           = require('gulp'),
 		autoprefixer   = require('gulp-autoprefixer'),
 		ftp            = require('vinyl-ftp'),
 		notify         = require("gulp-notify"),
-    // svgstore       = require('gulp-svgstore'),
+    svgstore       = require('gulp-svgstore'),
 		rsync          = require('gulp-rsync');
 
 
@@ -60,14 +60,14 @@ gulp.task('sass', function() {
 	.pipe(browserSync.reload({stream: true}));
 });
 
-/*gulp.task("sprite", function () {
-  return gulp.src("app/img/!*-icon.svg")
+gulp.task("sprite", function () {
+  return gulp.src("app/img/*-icon.svg")
       .pipe(svgstore({
         inlineSvg: true
       }))
       .pipe(rename("sprite.svg"))
       .pipe(gulp.dest("app/img"));
-});*/
+});
 
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch('app/sass/**/*.scss', ['sass']);
