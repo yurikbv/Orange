@@ -1,0 +1,97 @@
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 660px;
+  margin: 0;
+}
+
+.menu-list__item{
+}
+
+.menu-list__link{
+  line-height: 110px;
+  padding: 5px 0;
+  text-decoration: none;
+  color: #fff;
+  &:hover{
+    color: $accent;
+  }
+  &:active{
+    color: $silver;
+  }
+}
+
+.menu-list__link.menu-list__link--active{
+  cursor: auto;
+  border-bottom: 1px solid white;
+  &:hover{
+    color: white;
+  }
+}
+
+.menu-toggle{
+  display: none;
+  cursor: pointer;
+  width: 50px;
+  padding: 0;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.menu-open{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+  &::after,&::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+  }
+  &::after{
+    top: 10px;
+  }
+  &::before{
+    top: 20px;
+  }
+}
+
+.menu-close::after,
+.menu-close::before{
+  content: '';
+  right: 0;
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.menu-close::after{
+  transform: rotate(45deg);
+}
+
+.menu-close::before{
+  transform: rotate(-45deg);
+}
+
+.menu-toggle:hover {
+  .menu-close::after,
+  .menu-close::before{
+    background-color: $accent;
+  }
+  .menu-open,
+  .menu-open::after,
+  .menu-open::before{
+    background-color: $accent;
+  }
+}

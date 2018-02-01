@@ -44,17 +44,25 @@ html, body{
 }
 
 body{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
   min-width: 320px;
   position: relative;
-  line-height: 1.65;
+  line-height: 30px;
   font-family: $default-font;
   overflow-x: hidden;
   opacity: 1;
 }
 
-section {
+.container {
+  max-width: $container-default;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+section,header,main,footer {
   position: relative;
 }
 

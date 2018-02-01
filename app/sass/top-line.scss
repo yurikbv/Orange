@@ -1,0 +1,20 @@
+.top-line{
+  position: absolute;
+  height: 110px;
+  background-color: rgba(#000,.3);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  .container{
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+}
+.top-line__logo{
+
+}
+

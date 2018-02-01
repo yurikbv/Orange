@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Title</title>
+	<title>Mishka</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,28 +23,64 @@
 	<meta name="msapplication-navbutton-color" content="#000">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-	<link rel="preload" href="fonts/RobotoBold/RobotoBold.woff" as="font">
-	<link rel="preload" href="fonts/RobotoRegular/RobotoRegular.woff" as="font">
+	<link rel="preload" href="fonts/OpenSansRegular.woff" as="font">
+	<link rel="preload" href="fonts/OpenSansBold.woff" as="font">
+	<link rel="preload" href="fonts/OpenSansLight.woff" as="font">
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
 </head>
 
-<body>
+<body class="index">
+<!--Header-->
+<header>
+    <!--Top Line-->
+  <div class="top-line">
+    <div class="container">
+      <!--Logo-->
+      <a class="top-line__logo">
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/logotype-white-tablet.svg">
+          <source media="(max-width: 460px)" srcset="img/logotype-white-mobile.svg">
+          <img src="img/logotype-white-desktop.svg" alt="">
+        </picture>
+      </a>
+      <!--Menu-->
+      <!--<nav class="menu-closed">-->
+        <ul class="top-line__menu menu-list menu-closed">
+          <li class="menu-list__item"><a href="" class="menu-list__link menu-list__link--active">Главная</a></li>
+          <li class="menu-list__item"><a href="" class="menu-list__link">Фотографии</a></li>
+          <li class="menu-list__item"><a href="" class="menu-list__link">Конкурс</a></li>
+          <li class="menu-list__item"><a href="" class="menu-list__link">HTML Academy</a></li>
+        </ul>
+      <!--</nav>-->
+      <button class="menu-toggle"><span class="menu-open"></span></button>
+    </div>
+  </div>
+  <div class="header-content--wrapper">
+    <div class="header-content">
+      <div class="header-content__index">
+        <strong class="header-content__title">Взгляните на жизнь иначе!</strong>
+        <button class="header-content__download">Скачать приложение</button>
+        <div class="header-content__app">
+          <img src="img/apple-logo.svg" alt=""><img src="img/android-logo.svg" alt=""><img src="img/microsoft-logo.svg"
+                                                                                           alt="">
+        </div>
+        <div class="header-content__OS">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+      </div>
+      <div class="header-content__image">
+        <picture>
+          <source media="(max-width: 460px)" srcset="img/iphone-5-in-hand-png.png">
+          <source media="(max-width: 768px)" srcset="img/iphone-6-tablet.png">
+          <img src="img/iphone-6-desctop.png" alt="">
+        </picture>
+      </div>
+    </div>
+  </div>
+</header>
 
-<div class="div">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto beatae blanditiis consequatur
-	deserunt distinctio ducimus fugit harum, id ipsa maiores, nihil nobis perferendis perspiciatis quos similique tempore
-	ut vel voluptatem voluptates. Aspernatur at consectetur debitis, deserunt dicta dolorem ducimus, enim et id incidunt
-	itaque magnam maxime nostrum numquam odio reprehenderit repudiandae rerum sapiente sed tempore vel vero voluptatem
-	voluptatum. Accusantium assumenda atque cum debitis doloribus earum facere, illo iure magni minima numquam optio
-	possimus quisquam repellat sapiente? Ad asperiores atque culpa cupiditate eaque eligendi eos eum excepturi
-	exercitationem maiores minus, mollitia nihil nisi non perferendis placeat provident quaerat qui sunt temporibus totam
-	ullam unde vel vero voluptate! Ab aliquam aliquid eum ex illo ipsa nemo nostrum optio porro sint. Accusantium ad amet
-	aperiam architecto assumenda consequuntur debitis, delectus dolore ducimus, enim eos ex excepturi facere fuga illo in
-	inventore ipsa itaque laudantium magnam magni molestiae nesciunt nostrum odit officiis placeat porro quibusdam
-	repellat sed sequi ullam veniam voluptatibus, voluptatum. Accusamus ad, autem deserunt dolor libero nihil non, nulla
-	odio odit omnis possimus reprehenderit rerum totam veniam veritatis? Assumenda cum cumque esse eveniet fugit numquam
-	rerum soluta velit veniam voluptate! Aliquid blanditiis esse et obcaecati praesentium quasi rem repudiandae totam?
-</div>
+<main></main>
+
+<footer></footer>
 	
 	<link rel="stylesheet" href="css/style.min.css">
 	<script src="js/scripts.min.js"></script>

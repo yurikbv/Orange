@@ -1,0 +1,68 @@
+.header-content--wrapper{
+  background: $blue-grey url("../img/back-desktop.jpg") center top no-repeat;
+}
+.header-content{
+  color: #fff;
+  display: flex;
+  position: relative;
+  max-width: $container-default;
+  margin: 0 auto;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 855px;
+}
+
+.header-content__index{
+  margin-top: 100px;
+  z-index: 1;
+  flex-basis: 300px;
+  text-align: center;
+}
+
+.header-content__title{
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: lighter;
+  margin: 0 auto;
+  display: block;
+}
+
+.header-content__download{
+  cursor: pointer;
+  margin: 50px 0 65px;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+  padding: 12px 0;
+  border: 3px solid white;
+  border-radius: 50px;
+  &:hover{
+    background-color: #fff;
+    color: $accent;
+  }
+  &:active{
+    color: $silver;
+  }
+}
+
+.header-content__app{
+  margin-bottom: 55px;
+  img{
+    margin: 0 20px;
+  }
+}
+
+.header-content__image{
+  position: absolute;
+  z-index: 0;
+  bottom: -8px;
+  right: 25px;
+}
+
+.header-content__OS{
+  font-weight: lighter;
+  line-height: 24px;
+}
