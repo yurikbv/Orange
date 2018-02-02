@@ -3,20 +3,15 @@
 }
 .header-content{
   color: #fff;
-  display: flex;
   position: relative;
   max-width: $container-default;
   margin: 0 auto;
-  padding: 0 10px;
-  justify-content: space-between;
-  align-items: center;
-  height: 855px;
+  padding: 215px 10px;
+  height: 852px;
 }
 
 .header-content__index{
-  margin-top: 100px;
-  z-index: 1;
-  flex-basis: 300px;
+  max-width: 300px;
   text-align: center;
 }
 
@@ -30,7 +25,7 @@
 
 .header-content__download{
   cursor: pointer;
-  margin: 50px 0 65px;
+  margin: 55px 0 65px;
   width: 100%;
   background-color: transparent;
   color: white;
@@ -39,6 +34,7 @@
   padding: 12px 0;
   border: 3px solid white;
   border-radius: 50px;
+  transition: all .3s ease-in;
   &:hover{
     background-color: #fff;
     color: $accent;
@@ -49,17 +45,16 @@
 }
 
 .header-content__app{
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   img{
-    margin: 0 20px;
+    margin: 0 18px;
   }
 }
 
 .header-content__image{
   position: absolute;
-  z-index: 0;
   bottom: -8px;
-  right: 25px;
+  right: 175px;
 }
 
 .header-content__OS{

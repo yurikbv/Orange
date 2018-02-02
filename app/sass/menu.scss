@@ -7,14 +7,12 @@
   margin: 0;
 }
 
-.menu-list__item{
-}
-
 .menu-list__link{
   line-height: 110px;
   padding: 5px 0;
   text-decoration: none;
   color: #fff;
+  transition: all .3s ease-in;
   &:hover{
     color: $accent;
   }
@@ -50,6 +48,7 @@
   width: 50px;
   height: 5px;
   background-color: #fff;
+  transition: all .3s ease-in;
   &::after,&::before{
     content: '';
     position: absolute;
@@ -57,6 +56,7 @@
     width: 50px;
     height: 5px;
     background-color: #fff;
+    transition: all .3s ease-in;
   }
   &::after{
     top: 10px;
@@ -70,8 +70,9 @@
 .menu-close::before{
   content: '';
   right: 0;
+  bottom: 25px;
   position: absolute;
-  width: 50px;
+  width: 40px;
   height: 5px;
   background-color: #fff;
 }

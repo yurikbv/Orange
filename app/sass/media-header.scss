@@ -1,0 +1,147 @@
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header-content--wrapper {
+    background: url("../img/back-tablet@1x.jpg") no-repeat;
+    background-size: cover;
+  }
+  //----------------------MENU------------------------------
+  .menu-closed .menu-list {
+    display: none;
+  }
+  .menu-opened.top-line {
+    position: relative;
+    background-color: $blue-grey;
+    transition: all .3s linear;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      left: -20px;
+      right: -20px;
+      bottom: 0;
+      box-shadow: 0 2px 0 #000;
+    }
+    .menu-list__item {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: -20px;
+        right: -20px;
+        top: 0;
+        background-color: #485461;
+        box-shadow: 0 2px 0 #000;
+      }
+    }
+    .menu-list__link {
+      line-height: 55px;
+      display: block;
+    }
+    .menu-list__link--active {
+      border: none;
+    }
+  }
+  .menu-opened + .header-content--wrapper {
+    margin-top: -110px;
+  }
+  .menu-opened .menu-list {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    order: 3;
+    .menu-list__item {
+      flex-basis: 100%;
+    }
+    .menu-list__link {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  .menu-toggle {
+    display: block;
+  }
+  //------------------END MENU---------------------
+  .header-content {
+    padding: 0 20px;
+    height: 730px;
+  }
+  .header-content__title {
+    width: 200px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .header-content__index {
+    padding-top: 200px;
+    z-index: 100;
+  }
+  .header-content__download {
+    margin: 30px 0 50px;
+  }
+  .header-content__app {
+    margin-bottom: 20px;
+  }
+  .header-content__image {
+    right: 0;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .header-content__title {
+    display: none;
+  }
+  .header-content--wrapper {
+    background: url("../img/back-mobile@1x.jpg") no-repeat;
+    background-size: contain;
+  }
+  .header-content__image {
+    position: relative;
+    padding-top: 139px;
+    bottom: -35px;
+  }
+  .header-content--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-content {
+    height: auto;
+    text-align: center;
+    margin: 0;
+    background-color: $blue-grey;
+    flex-basis: 100%;
+  }
+  .header-content__index {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .top-line__logo {
+    height: 65px;
+    img {
+      padding-top: 22px;
+    }
+  }
+  .header-content__download {
+    margin-bottom: 30px;
+  }
+  .header-content__OS {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .menu-list__link {
+    line-height: 65px;
+  }
+  .menu-opened + .header-content--wrapper {
+    margin-top: -65px;
+  }
+  .header-content__app {
+    margin-bottom: 14px;
+  }
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    /**/
+  }
+}

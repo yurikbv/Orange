@@ -9,5 +9,10 @@
 @import "top-line";
 @import "menu";
 @import "head-content";
+@import "features";
+@import "effects";
 //Media
+@import "media-header";// Всегда в конце
+@import "media-feature";// Всегда в конце
+@import "media-effect";// Всегда в конце
 @import "media";// Всегда в конце

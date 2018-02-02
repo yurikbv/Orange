@@ -1,6 +1,5 @@
 .top-line{
   position: absolute;
-  height: 110px;
   background-color: rgba(#000,.3);
   z-index: 1;
   left: 0;
@@ -15,6 +14,9 @@
   }
 }
 .top-line__logo{
-
+  height: 110px;
+  img{
+    padding-top: 28px;
+  }
 }
 

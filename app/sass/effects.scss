@@ -1,0 +1,31 @@
+.effect {
+  margin-top: 42px;
+  flex-basis: 300px;
+  //flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.effect__text{
+  flex-basis: 550px;
+  margin-right: 25px;
+}
+
+.effect__title{
+  display: inline-block;
+  padding-top: 45px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.effect__description{
+  padding-top: 22px;
+}
+
+.effect__link {
+  display: inline-block;
+  padding-top: 30px;
+  color: $accent;
+}
