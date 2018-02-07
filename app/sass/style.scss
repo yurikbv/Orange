@@ -11,8 +11,14 @@
 @import "head-content";
 @import "features";
 @import "effects";
+@import "comments";
+@import "price";
+@import "question";
+@import "map";
+@import "footer";
 //Media
 @import "media-header";// Всегда в конце
 @import "media-feature";// Всегда в конце
 @import "media-effect";// Всегда в конце
+@import "media-comment";// Всегда в конце
 @import "media";// Всегда в конце

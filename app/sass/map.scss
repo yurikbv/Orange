@@ -1,0 +1,16 @@
+.map__triangle{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.map{
+  background: url("../img/map.jpg") center no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 520px;
+}

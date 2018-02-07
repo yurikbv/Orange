@@ -1,0 +1,38 @@
+.questions-outer{
+  background-color: #fff;
+}
+
+.question{
+  padding: 53px 10px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.question__head{
+  margin: 0;
+  flex-basis: 100%;
+  font-size: 50px;
+  line-height: 1.2;
+  color: $blue-grey;
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 53px;
+}
+
+.question__item{
+  text-align: center;
+  flex-basis: 230px;
+}
+
+.question__title{
+  display: block;
+}
+
+.question__text{
+  padding-top: 20px;
+  display: block;
+  font-size: 24px;
+  color: $accent;
+  font-weight: 300;
+}

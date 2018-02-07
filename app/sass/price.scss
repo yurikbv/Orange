@@ -1,0 +1,47 @@
+.price-outer{
+  background: white url("../img/line2.png") center top no-repeat;
+  background-size: cover;
+}
+
+.price{
+  padding: 160px 10px 100px;
+}
+
+.price__table{
+  width: 100%;
+  border-collapse: collapse;
+  th{
+    padding: 20px 15px;
+  }
+  td,th{
+    border: 2px solid #e5e5e5;
+    text-align: center;
+    width: 25%;
+  }
+  td{
+    padding: 14px  20px;
+    background-color: #fff;
+  }
+  tr > td:first-child {
+    text-align: left;
+    color: $blue-grey;
+  }
+}
+.price__head{
+  background-color: $blue-grey;
+  color: white;
+  b{
+    display: block;
+    text-transform: uppercase;
+  }
+  span{
+    font-size: 24px;
+    font-weight: 400;
+  }
+  th:first-child{
+    visibility: hidden;
+  }
+  th:nth-child(3){
+    background: url("../img/hit.svg") no-repeat;
+  }
+}

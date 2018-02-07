@@ -1,14 +1,21 @@
-.effect {
-  margin-top: 42px;
+.effect-outer{
+  background-color: #f2f2f2;
+}
+
+.effect__image{
   flex-basis: 300px;
-  //flex-wrap: wrap;
+  margin-right: 35px;
+}
+
+.effect {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 70px;
+  padding: 42px 0 70px;
 }
 
 .effect__text{
+  margin-left: 35px;
   flex-basis: 550px;
   margin-right: 25px;
 }
@@ -26,6 +33,11 @@
 
 .effect__link {
   display: inline-block;
-  padding-top: 30px;
+  margin-top: 30px;
   color: $accent;
+  transition: color .5s ease-in;
+  &:hover{
+    color: #283645;
+    text-decoration: none;
+  }
 }

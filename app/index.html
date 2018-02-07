@@ -31,6 +31,18 @@
 </head>
 
 <body class="index">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
+  <symbol id="left-arrow" viewBox="0 0 477.175 477.175">
+    <g>
+      <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225   c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>
+    </g>
+  </symbol>
+  <symbol id="right-arrow" viewBox="0 0 477.175 477.175">
+    <g>
+      <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5   c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+    </g>
+  </symbol>
+</svg>
 <!---------------------------Header---------------->
 <header>
     <!-----------------------Top Line------------------->
@@ -69,8 +81,9 @@
         <strong class="header-content__title">Взгляните на жизнь иначе!</strong>
         <button class="header-content__download">Скачать приложение</button>
         <div class="header-content__app">
-          <img src="img/apple-logo.svg" alt=""><img src="img/android-logo.svg" alt=""><img src="img/microsoft-logo.svg"
-                                                                                           alt="">
+          <img src="img/apple-logo.svg" alt="" width="56">
+          <img src="img/android-logo.svg" alt="" width="52">
+          <img src="img/microsoft-logo.svg" alt="">
         </div>
         <div class="header-content__OS">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
       </div>
@@ -79,14 +92,20 @@
 </header>
 
 <main>
+  <!--Features Section-->
   <div class="features-outer">
     <section class="features container">
-      <strong class="features__head">Устали от серости мегаполиса? Нам есть, что вам <br> предложить!</strong>
+      <strong class="features__head">Устали от серости мегаполиса? <span>Нам есть, что вам <br> предложить!</span></strong>
 
       <div class="features__images">
-        <div class="features__image"><img src="img/Iphone%20screen%20%231%20copy.png" alt=""></div>
-        <div class="features__image"><img src="img/Iphone%20screen%20%232%20copy%203.png" alt=""></div>
-        <div class="features__image"><img src="img/Iphone%20screen%20%233%20copy%202.png" alt=""></div>
+        <div class="features__image"><img src="img/Iphone%20screen%20%231%20copy-1.png" alt=""></div>
+        <div class="features__image"><img src="img/Iphone%20screen%20%232%20copy%203-1.png" alt=""></div>
+        <div class="features__image">
+          <picture>
+            <!--<source media="(max-width: 768px)" srcset="img/Iphone screen #3 copy 2.png">-->
+            <img src="img/Iphone%20screen%20%233%20copy%202-1.png" alt="">
+          </picture>
+        </div>
       </div>
 
       <div class="features-list">
@@ -104,7 +123,9 @@
         </div>
       </div>
     </section>
-    <section class="effect">
+  </div>
+  <div class="effect-outer">
+    <section class="effect container">
       <img src="img/effect.svg" alt="" class="effect__image">
       <div class="effect__text">
         <span class="effect__title">Эффект на 24 часа!</span>
@@ -115,9 +136,125 @@
       </div>
     </section>
   </div>
+
+  <!--Comments Section-->
+  <div class="comments-outer">
+    <section class="comments container">
+      <button class="arrow-prev">
+        <svg width="23">
+          <use xlink:href="#left-arrow"/>
+        </svg>
+      </button>
+      <div class="comments__quotes"><img src="img/quotes.svg" alt="quotes"></div>
+      <div class="comments__list">
+        <div class="comments__item comments__item--active">
+          <div class="comments__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</div>
+          <div class="comments__author">
+            <b>Николай Петров</b>
+            <span>25 лет, водитель трамвая</span>
+          </div>
+        </div>
+        <div class="comments__item">
+          <div class="comments__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</div>
+          <div class="comments__author">
+            <b>Николай Петров</b>
+            <span>25 лет, водитель трамвая</span>
+          </div>
+        </div>
+        <div class="comments__item">
+          <div class="comments__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</div>
+          <div class="comments__author">
+            <b>Николай Петров</b>
+            <span>25 лет, водитель трамвая</span>
+          </div>
+        </div>
+      </div>
+      <button class="arrow-next">
+        <svg width="23">
+          <use xlink:href="#right-arrow"/>
+        </svg>
+      </button>
+    </section>
+  </div>
+
+  <!--Price Section-->
+  <div class="price-outer">
+    <section class="price container">
+      <table class="price__table">
+        <thead class="price__head">
+          <tr>
+            <th></th>
+            <th>
+              <b>База</b>
+              <span>1,99 USD</span>
+            </th>
+            <th>
+              <b>Стандарт</b>
+              <span>3,99 USD</span>
+            </th>
+            <th>
+              <b>Анлим</b>
+              <span>9,99 USD</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="price__body">
+        <tr>
+          <td>Розовый фильтр</td>
+          <td><img src="img/yes.svg" alt=""></td>
+          <td><img src="img/yes.svg" alt=""></td>
+          <td><img src="img/yes.svg" alt=""></td>
+        </tr>
+        <tr>
+          <td>Смайлики</td>
+          <td><img src="img/no.svg" alt=""></td>
+          <td><img src="img/yes.svg" alt=""></td>
+          <td><img src="img/yes.svg" alt=""></td>
+        </tr>
+        <tr>
+          <td>Комментарии</td>
+          <td><img src="img/no.svg" alt=""></td>
+          <td><img src="img/no.svg" alt=""></td>
+          <td><img src="img/yes.svg" alt=""></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <!--Question Section-->
+  <div class="questions-outer">
+    <section class="question container">
+      <h4 class="question__head">Остались вопросы? <br> Свяжитесь с нами!</h4>
+      <div class="question__item">
+        <strong class="question__title">Звоните:</strong>
+        <span class="question__text">+7 (812) 555-66-66</span>
+      </div>
+      <div class="question__item">
+        <strong class="question__title">Приезжайте в гости:</strong>
+        <span class="question__text">ул. Большая Конюшенная, 19/8</span>
+      </div>
+      <div class="question__item">
+        <strong class="question__title">Пишите:</strong>
+        <span class="question__text">mail@htmlacademy.ru</span>
+      </div>
+    </section>
+  </div>
+  <!--Map Section-->
+  <section class="map">
+    <img src="img/triangle-white-footer.png" alt="triangle" class="map__triangle">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d103210.20660368213!2d43.889015935535575!3d56.26563295260675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1517835337334" width="100%" height="520" frameborder="0" style="border:0" allowfullscreen></iframe>  </section>
 </main>
 
-<footer></footer>
+<footer class="container">
+  <div class="footer__logo"><img src="img/logotype-blue-desktop.svg" alt="logo"></div>
+  <div class="footer__socials">
+    <a href="" class="social__link"><img src="img/twitter%20copy.svg" alt="twitter" width="20"></a>
+    <a href="" class="social__link"><img src="img/facebook%20copy.svg" alt="facebook" width="20"></a>
+    <a href="" class="social__link"><img src="img/Vector%20Smart%20Object%20copy.svg" alt="youtube" width="20"></a>
+  </div>
+  <div class="footer__developer"><a href="http://yuriy-bochkarev.com">yuriy-bochkarev.com</a></div>
+</footer>
 	
 	<link rel="stylesheet" href="css/style.min.css">
 	<script src="js/scripts.min.js"></script>

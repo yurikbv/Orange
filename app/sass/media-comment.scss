@@ -1,0 +1,21 @@
+@media only screen and (max-width : 768px){
+  .comments {
+    button{
+    display: none;
+    }
+  }
+  .comments__quotes{
+    display: none;
+  }
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}

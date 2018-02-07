@@ -61,11 +61,11 @@ gulp.task('sass', function() {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("app/img/*-icon.svg")
+  return gulp.src("app/img/*arrow.svg")
       .pipe(svgstore({
         inlineSvg: true
       }))
-      .pipe(rename("sprite.svg"))
+      .pipe(rename("sprite-arrow.svg"))
       .pipe(gulp.dest("app/img"));
 });
 
